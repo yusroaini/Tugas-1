@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+body{font-family: arial;
+}
+
+form input{ border-color: green;
+	padding: 15px;
+	max-width: 350px;
+}
+form label{
+	font-size: 20px;
+	font-weight: bold;
+	margin-left:25px;
+}
+form button{
+	background-color: bluesky;
+	border-color: blue;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 10px;
+}
+form button:hover{
+	background-color: red;
+}
+</style>
+
+</head>
+<body>
+	<div style="max-width: 500px; border:5px #000 solid;
+	padding: 10px; border-radius: 0 10% 0 20%; margin-left: 350px;">
+	<h1 align="center">FORM INPUT DATA</h1>
+	<form style="margin-left: 200px"; action="form1.html" method="POST">
+		
+		<label>NIM </label>
+		<br></br>
+		<input type="text" name="nis_anggota"><br></br>
+		<label>NAMA</label>
+		<br></br>
+		<input type="text" name="nama_anggota"><br></br>
+		<label>ALAMAT</label>
+		<br></br>
+		<input name="alamat"></input> <br></br>
+		<label> Jenis Kelamin</label>
+		<br></br>
+		<input type="radio" name="kelamin" value="laki-laki">
+		laki-laki
+		<input type="radio" name="kelamin" value="perempuan">
+	  perempuan <br>
+  <br><br><br>
+		<button type="submit">simpan</button>
+
+	</form>
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tutorial Belajar JavaScript</title>
+ 
+<script>
+function tampilkan(){
+ 
+  var nama_kota=document.getElementById("form1").select1.value;
+  var p_kontainer=document.getElementById("container");
+ 
+  if (nama_kota=="jakarta")
+    {
+        p_kontainer.innerHTML="Jakarta Ibu kota Republik Indonesia";
+    }
+  else if (nama_kota=="bandung")
+    {
+        p_kontainer.innerHTML="Bandung kota kembang";
+    }
+  else if (nama_kota=="bogor")
+    {
+        p_kontainer.innerHTML="Bogor kota hujan";
+    }
+   else if (nama_lengkap=="nama")
+    {
+        p_kontainer.innerHTML="lia";
+    }
+	}
+</script>
+</head>
+<body>
+<h2>Menampilkan Hasil Form HTML dengan JavaScript</h2>
+ 
+<form id="form1" name="form1" onSubmit="return false">
+  <label for="select1">Pilih Kota: </label>
+  <p>
+    <select id="select1" name="select1">
+      <option value="jakarta">Jakarta</option>
+      <option value="bandung">Bandung</option>
+      <option value="bogor">Bogor</option>
+      <option value="Nama">Nama</option>
+        </select>
+       <input type="submit" value="Tampilkan Keterangan" onClick="tampilkan()">
+      </p>
+    
+
+
+    <tr>
+      <th scope="row"><div align="left">Alamat</div></th>
+      <td><div align="center"><strong>:</strong></div></td>
+      <td><label>
+        <input type="text" name="k" id="k">
+      </label></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">Ttl</div></th>
+      <td><div align="center"><strong>:</strong></div></td>
+      <td><label>
+        <input type="text" name="u" id="u">
+      </label></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">Agama</div></th>
+      <td><div align="center"><strong>:</strong></div></td>
+      <td><label>
+        <select name="h" id="h">
+        </select>
+      </label></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">jenis Kelamin</div></th>
+      <td><div align="center"><strong>:</strong></div></td>
+      <td> <p>
+        <label>
+          <input type="radio" name="j" value="radio" id="j_0">
+          Laki-laki</label>
+        <br>
+        <label>
+          <input type="radio" name="j" value="radio" id="j_1">
+          Perempuan</label>
+        <br>
+      </p></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">Prodi</div></th>
+      <td><div align="center"><strong>:</strong></div></td>
+      <td><label>
+        <input type="text" name="v" id="v">
+      </label></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">Nim</div></th>
+      <td><div align="center"><strong>:</strong></div></td>
+      <td><label>
+        <input type="text" name="k2" id="k2">
+      </label></td>
+    </tr>
+   
+  </table>
+
+ 
+
+  <p>&nbsp;  </p>
+</form>
+ 
+<p id="container"></p>
+ 
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir</title>
+</head>
+<body>
+      <form action="form2.html" method="POST">
+        <fieldset>
+        <legend>Formulir</legend>
+       
+        <table width="288" height="154" border="0">
+          <tr>
+            <th width="82" height="24" scope="col"><div align="left">Nama</div></th>
+            <th width="16" scope="col"><div align="center">:</div></th>
+            <th width="154" scope="col"><div align="left">
+              <label>
+              <input type="text" name="s" id="s">
+              </label>
+            </div></th>
+          </tr>
+          <tr>
+            <th height="40" scope="row"><label>
+              <div align="left">Alamat</div>
+            </label></th>
+            <td><label>
+              <div align="center"><strong>:</strong> </div>
+            </label></td>
+            <td><input type="text" name="alamat" placeholder="Alamat" /></td>
+          </tr>
+          <tr>
+            <th height="40" scope="row"><label>
+              <div align="left">Ttl</div>
+            </label></th>
+            <td><label>
+              <div align="center"><strong>:</strong></div>
+            </label></td>
+            <td><input type="text" name="ttl" placeholder="Ttl" /></td>
+          </tr>
+          <tr>
+            <th height="40" scope="row"><label>
+              <div align="left">Email</div>
+            </label></th>
+            <td><label>
+              <div align="center"><strong>:</strong></div>
+            </label></td>
+            <td><input type="text" name="Email" placeholder="Email" /></td>
+          </tr>
+        </table>
+<p>
+            <label>Jenis kelamin<strong> :</strong></label>
+<label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+            <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
+        </p>
+        <p>
+            <label>Agama <strong>:</strong></label>
+          <select name="agama">
+              <option value="islam">Islam</option>
+              <option value="kristen">Kristen</option>
+              <option value="hindu">Hindu</option>
+              <option value="budha">Budha</option>
+            </select>
+        </p>
+<p>
+            <label>Biografi:</label>
+            <textarea name="biografi"></textarea>
+        </p>
+        <p>
+            <input type="submit" name="submit" value="Kirim" />
+        
+            <input type="submit" name="submit" value="Reset" />
+        </p>
+        </fieldset>
+    </form>
+</body>
+</html>
